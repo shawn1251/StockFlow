@@ -1,6 +1,7 @@
 # StockFlow
 This repository serves as a practice project for utilizing Apache Airflow in conjunction with PostgreSQL for managing and processing stock trading data.
-![StockFlow Image]()
+
+<img src="https://raw.githubusercontent.com/shawn1251/StockFlow/main/demo/upload_e7776ebe5251d901c66d80703eb0415b.png" width="600" />
 
 ## Overview
 * **Airflow Usage:** This project is a hands-on exploration of Apache Airflow and PostgreSQL, showcasing how they can be integrated for data processing and management tasks.
@@ -38,18 +39,22 @@ To get started with this project, follow these steps:
 
 4. **Configure the database connection in `Admin>Connections`:**
     Example setting:
-    ![Database Connection]()
+
+   <img src="https://raw.githubusercontent.com/shawn1251/StockFlow/main/demo/upload_b7b68fd5c8f95b4e237233036f43e985.png" width="400" />
 
 5. **Add variables in `Admin>Variables`:**
     Default stocks: `["^GSPC", "^IXIC", "^DJI"]`. You can create your target list in the variable `stock_list`.
-    ![Variables]()
+
+   <img src="https://raw.githubusercontent.com/shawn1251/StockFlow/main/demo/upload_c00fdaa3d2b8bd6e722cc04af1af9baa.png" width="400" />
 
 6. **Trigger the defined Airflow tasks to observe the flow in action.**
-    ![Airflow Tasks]()
+
+    <img src="https://raw.githubusercontent.com/shawn1251/StockFlow/main/demo/upload_e7776ebe5251d901c66d80703eb0415b.png" width="600" />
 
 7. **Check the stock data:**
     Because the docker-compose has exposed the PostgreSQL port, we can easily check the data using GUI tools. Here we use pgAdmin4.
-    ![Stock Data]()
+
+    <img src="https://raw.githubusercontent.com/shawn1251/StockFlow/main/demo/upload_8403dbd3644ca977bc0f2e5d2bc66770.png" width="600" />
 
 # Acknowledgements
 
